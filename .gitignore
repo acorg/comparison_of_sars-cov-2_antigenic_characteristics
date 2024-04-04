@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+data/titer_analyses/titer_magnitude/dataset_magnitude_effect/dataset_magnitude_effect_map_info.rds
+*~lock~
