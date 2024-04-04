@@ -1,0 +1,33 @@
+Serum,Color
+WT vac AstraZeneca,grey
+AstraZeneca,grey
+WT vac protein,grey
+WT vac mRNA,grey
+mRNA-1273,grey
+D614G convalescent,#393b79
+WT convalescent,#333333
+B.1.1.7 convalescent,#637939
+P.1 convalescent,#7b4173
+B.1.351 convalescent,#e7ba52
+C.37 convalescent,#79c9c9
+B.1.617.1 convalescent,#ad494a
+B.1.617.2 convalescent,#d18652
+B.1.526 convalescent,#b8bf58
+B.1.526+E484K convalescent,#9ab370
+B.1.637 convalescent,#456C8C
+B.1.429 convalescent,#9B9FD9
+B.1.621 convalescent,#0096ad
+R.1 convalescent,#f2f53b
+614D vac protein,#393b79
+B.1.1.7 vac protein,#637939
+B.1.351 vac protein,#e7ba52
+P.1 vac protein,#7b4173
+B.1.617.2 vac protein,#d18652
+B.1.617.2+K417N vac protein,#d18652
+614D convalescent,#393b79
+B.1.1.7+E484K convalescent,#637939
+P.2 convalescent,#be7cf8
+BA.1 convalescent,#EF3737
+BA.1.1 convalescent,#ed6f6f
+BA.2 convalescent,#d10fa2
+mRNA-1273.351,#e7ba52

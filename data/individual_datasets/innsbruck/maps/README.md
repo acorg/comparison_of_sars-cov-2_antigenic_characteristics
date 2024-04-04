@@ -1,0 +1,1 @@
+`map-OmicronI+II+III-thresholded-single_exposure-P1m1.ace` was acquired from [https://github.com/acorg/roessler_netzl_et_al2022/tree/v1.0.0/data/maps](https://github.com/acorg/roessler_netzl_et_al2022/tree/v1.0.0/data/maps).
