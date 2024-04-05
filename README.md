@@ -8,8 +8,6 @@ This repository contains the raw data and code to reproduce the analyses present
 
 `som_figures`: Subdirectories for SOM figures containing the code to produce each figure, as well as the SOM figures themselves.
 
-`paper`: Different versions of the paper.
-
 `data`: Data and code to produce the data.
 
 `code`: Code and helper functions.
@@ -29,4 +27,4 @@ Available from [github.com/shwilks/titertools](github.com/shwilks/titertools).
 
 To re-generate data associated with figures, run `code/generate_data.R`.
 
-To re-generate the figures, run `code/generate_figures.R`
+To re-generate the figures, run `code/generate_figures.R`.
