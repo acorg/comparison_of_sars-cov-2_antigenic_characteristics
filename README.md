@@ -8,17 +8,17 @@ This repository contains the raw data and code to reproduce the analyses present
 
 `som_figures`: Subdirectories for SOM figures containing the code to produce each figure, as well as the SOM figures themselves.
 
-`data`: Data and code to produce the data.
+`data`: Raw data and code to produce data used for plotting.
 
 `code`: Code and helper functions.
 
 
 ## Dependencies
 
-All dependencies are listed in the `DEPENDENCIES` file. Apart from the dependencies available through cran, the following packages specific to antigenic cartography and titer analysis are required:
+All dependencies are listed in the `DEPENDENCIES` file. Apart from the dependencies available through CRAN, the following packages specific to antigenic cartography and titer analysis are required:
 
 ##### Racmacs
-Available from [github.com/shwilks/Racmacs](github.com/shwilks/Racmacs).
+Available from [github.com/shwilks/Racmacs](github.com/shwilks/Racmacs), or through CRAN.
 
 ##### titertools
 Available from [github.com/shwilks/titertools](github.com/shwilks/titertools).
