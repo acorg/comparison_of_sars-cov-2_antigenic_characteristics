@@ -171,7 +171,7 @@ fold_change_by_map_with_slopes <- function(
   ) +
   theme_mapplot() +
   geom_vline(
-    xintercept = c(seq(0.975, 16.975, by = 1),
+    xintercept = c(seq(0.975, 16.975, by = 1)),
     color = 'gray30'
   ) +
   geom_hline(
@@ -278,7 +278,7 @@ fold_change_by_map_with_slopes_main <- function(
   ) +
   theme_mapplot() +
   geom_vline(
-    xintercept = c(seq(0.975, 16.975, by = 1),
+    xintercept = c(seq(0.975, 16.975, by = 1)),
     color = 'gray30'
   ) +
   geom_hline(

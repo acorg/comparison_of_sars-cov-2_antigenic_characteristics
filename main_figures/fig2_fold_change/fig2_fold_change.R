@@ -99,7 +99,7 @@ data_ag_ind %>%
 legend_df <- left_join(gather(as_tibble(ag_colors)), gather(as_tibble(ag_shapes)), by='key')
 colnames(legend_df) <- c('ag_name', 'color', 'shape')
 legend_df$x <- rep(seq(1, 7), each = 5)
-legend_df$yy <- rep(seq(5, 1), each = 5)
+legend_df$yy <- rep(c(5, 4, 3, 2, 1), times = 7)
 legend_df %>%
   filter(ag_name %in% duplicated_ags) -> legend_df
 legend_df$y <- rev(1:length(duplicated_ags))
@@ -152,24 +152,24 @@ slope_data_ag <- calculate_xloc_sampling(data_ag, data_eff_1, titrated, sr_group
 slope_data_ag$sr_group = factor(slope_data_ag$sr_group, levels = sr_groups)
 
 fold_change_by_map_with_slopes_main(xloc_foldchange_table, slope_data, slope_data_ag, c(
-  'Emory\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Innsbruck\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Oxford\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Galveston\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Madison\n<br><span style = 'font-size:25pt'>(FRNT)</span></br>',
-  'WUSTL\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Duke\n<br><span style = 'font-size:25pt'> </span></br>',
-  'FDA\n<br><span style = 'font-size:25pt'> </span></br>',
-  'AMC\n<br><span style = 'font-size:25pt'> </span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(VeroE6)</span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(Calu-3)</span></br>',
-  'Geneva\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Charité\n<br><span style = 'font-size:25pt'> </span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(PRNT)</span></br>',
-  'Mt.<span style = 'font-size:5pt'> </span>Sinai\n<br><span style = 'font-size:25pt'> </span></br>',
-  'Madison<br><span style = 'font-size:25pt'>(pooled)</span></br>',
-  'Madison<br><span style = 'font-size:25pt'>(unpooled)</span></br>',
-  'Maryland<br><span style = 'font-size:25pt'>(pooled)</span></br></span></br>'),
+  "Emory\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Innsbruck\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Oxford\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Galveston\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Madison\n<br><span style = 'font-size:25pt'>(FRNT)</span></br>",
+  "WUSTL\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Duke\n<br><span style = 'font-size:25pt'> </span></br>",
+  "FDA\n<br><span style = 'font-size:25pt'> </span></br>",
+  "AMC\n<br><span style = 'font-size:25pt'> </span></br>",
+  "EMC<br><span style = 'font-size:25pt'>(VeroE6)</span></br>",
+  "EMC<br><span style = 'font-size:25pt'>(Calu-3)</span></br>",
+  "Geneva\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Charité\n<br><span style = 'font-size:25pt'> </span></br>",
+  "EMC<br><span style = 'font-size:25pt'>(PRNT)</span></br>",
+  "Mt.<span style = 'font-size:5pt'> </span>Sinai\n<br><span style = 'font-size:25pt'> </span></br>",
+  "Madison<br><span style = 'font-size:25pt'>(pooled)</span></br>",
+  "Madison<br><span style = 'font-size:25pt'>(unpooled)</span></br>",
+  "Maryland<br><span style = 'font-size:25pt'>(pooled)</span></br></span></br>"),
   c(5.99, 8.99, 10.99, 13.99, 14.99)) -> gp
 
 gps <- gp + guides(color = 'none', size = 'none', shape = 'none')

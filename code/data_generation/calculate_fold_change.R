@@ -293,16 +293,6 @@ calculate_xloc_foldchange_table <- function(
   
   x$x_loc <- mapply(x_loc_fct, x$sr_group, x$ag_name, x$map)
   
-
-  # Set outlier antigens (BA.1 to 0), all titers are ND.
-  x$mean_diff[x$ag_name == 'BA.1' & x$map == 'emory' & x$sr_group == 'D614G convalescent'] <- NA
-  x$mean_diff_lower[x$ag_name == 'BA.1' & x$map == 'emory' & x$sr_group == 'D614G convalescent'] <- NA
-  x$mean_diff_upper[x$ag_name == 'BA.1' & x$map == 'emory' & x$sr_group == 'D614G convalescent'] <- NA
-
-  x$mean_diff[x$ag_name == 'BA.1' & x$map == 'innsbruck' & x$sr_group == 'B.1.1.7 convalescent'] <- NA
-  x$mean_diff_lower[x$ag_name == 'BA.1' & x$map == 'innsbruck' & x$sr_group == 'B.1.1.7 convalescent'] <- NA
-  x$mean_diff_upper[x$ag_name == 'BA.1' & x$map == 'innsbruck' & x$sr_group == 'B.1.1.7 convalescent'] <- NA
-
   x
 
 }

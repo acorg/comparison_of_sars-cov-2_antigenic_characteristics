@@ -132,13 +132,13 @@ slope_data_ag$sr_group = factor(slope_data_ag$sr_group, levels = sr_groups_all)
 levels(slope_data_ag$sr_group)[1] <- 'mRNA-1273 or BNT162b2 vaccinated'
 
 fold_change_by_map_with_slopes(xloc_foldchange_table, slope_data, c(
-  'Duke', 'Emory', 'FDA', 'Innsbruck', 'Oxford', 'Mt.<span style = 'font-size:5pt'> </span>Sinai','AMC',
-  'Geneva', 'Charité', 'EMC<br><span style = 'font-size:25pt'>(PRNT)</span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(VeroE6)</span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(Calu-3)</span></br>',  'Galveston',
-  'Madison\n<br><span style = 'font-size:25pt'>(FRNT)</span></br>',
-  'Madison<br><span style = 'font-size:25pt'>(pooled)</span></br>',
-  'Madison<br><span style = 'font-size:25pt'>(unpooled)</span></br>', 'WUSTL', 'Maryland'),
+  'Duke', 'Emory', 'FDA', 'Innsbruck', 'Oxford', 'Mt.<span style = "font-size:5pt"> </span>Sinai','AMC',
+  'Geneva', 'Charité', 'EMC<br><span style = "font-size:25pt">(PRNT)</span></br>',
+  'EMC<br><span style = "font-size:25pt">(VeroE6)</span></br>',
+  'EMC<br><span style = "font-size:25pt">(Calu-3)</span></br>',  'Galveston',
+  'Madison\n<br><span style = "font-size:25pt">(FRNT)</span></br>',
+  'Madison<br><span style = "font-size:25pt">(pooled)</span></br>',
+  'Madison<br><span style = "font-size:25pt">(unpooled)</span></br>', 'WUSTL', 'Maryland'),
   c(7.99, 15.99)) -> gp
 
 gp <- gp + geom_line(
@@ -182,13 +182,13 @@ levels(slope_data_ag$sr_group)[1] <- 'mRNA-1273 or BNT162b2 vaccinated'
 
 fold_change_by_map_with_slopes(xloc_foldchange_table, slope_data, c(
   'Emory', 'Innsbruck', 'Oxford', 'Galveston', 'WUSTL',
-  'Madison\n<br><span style = 'font-size:25pt'>(FRNT)</span></br>', 'Duke', 'FDA', 'AMC',
-  'EMC<br><span style = 'font-size:25pt'>(VeroE6)</span></br>',
-  'EMC<br><span style = 'font-size:25pt'>(Calu-3)</span></br>', 'Geneva', 'Charité',
-  'EMC<br><span style = 'font-size:25pt'>(PRNT)</span></br>',
-  'Mt.<span style = 'font-size:5pt'> </span>Sinai',
-  'Madison<br><span style = 'font-size:25pt'>(pooled)</span></br>',
-  'Madison<br><span style = 'font-size:25pt'>(unpooled)</span></br>', 'Maryland'),
+  'Madison\n<br><span style = "font-size:25pt">(FRNT)</span></br>', 'Duke', 'FDA', 'AMC',
+  'EMC<br><span style = "font-size:25pt">(VeroE6)</span></br>',
+  'EMC<br><span style = "font-size:25pt">(Calu-3)</span></br>', 'Geneva', 'Charité',
+  'EMC<br><span style = "font-size:25pt">(PRNT)</span></br>',
+  'Mt.<span style = "font-size:5pt"> </span>Sinai',
+  'Madison<br><span style = "font-size:25pt">(pooled)</span></br>',
+  'Madison<br><span style = "font-size:25pt">(unpooled)</span></br>', 'Maryland'),
   c(5.99, 8.99, 10.99, 13.99, 14.99)) -> gp
 
 gp <- gp + geom_line(
